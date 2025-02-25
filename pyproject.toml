@@ -18,8 +18,8 @@ classifiers = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/pypa/sampleproject"
-Issues = "https://github.com/pypa/sampleproject/issues"
+Homepage = "https://github.com/PACRian/SimulinkRunner"
+Issues = "https://github.com/PACRian/SimulinkRunner/issues"
 
 [tool.black]
 line-length = 100
