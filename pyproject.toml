@@ -20,21 +20,3 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/PACRian/SimulinkRunner"
 Issues = "https://github.com/PACRian/SimulinkRunner/issues"
-
-[tool.black]
-line-length = 100
-target-version = ['py37', 'py38', 'py39', 'py310']
-include = '\.pyi?$'
-exclude = '''
-/(
-  \.toml
-  |\.sh
-  |\.git
-  |\.ini
-  |\.c
-  |\.cpp
-  |\.hpp
-  |\.h
-  |\.txt
-)/
-'''
