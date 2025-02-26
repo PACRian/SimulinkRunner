@@ -7,13 +7,13 @@ To enable this library, the [Matlab engine for Python](https://github.com/mathwo
 ## Installation
 The package can be installed via `pip`
 ```sh
-pip install simulinkrunner
+pip install simulinkRunner
 ```
 And it can also be installed from source code:
 ```sh
-git clone https://github.com/<>.git
+git clone git@github.com:PACRian/SimulinkRunner.git
 cd simulinkRunner
-pip install .
+pip install -e .
 ```
 
 ## Quickstart
@@ -46,7 +46,10 @@ runner()
 runner.close()
 ```
 
-A simple demo `run_batch_test.py` along with a simple Simulink model `test.slx` (located in `tests/simulink_model`) can be found, execute the script to run the Simulink model multi-batch.
+A simple demo [`run_batch_test.py`](https://github.com/PACRian/SimulinkRunner/blob/master/run_batch_test.py) along with a simple Simulink model [`test.slx`](https://github.com/PACRian/SimulinkRunner/tree/master/tests/simulink_model)(located in `tests/simulink_model`) can be found, execute the script to run the Simulink model multi-batch.
 ```bash
 python .\run_batch_test.py
 ```
+
+## Command line tool
+[TODO]
