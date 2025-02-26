@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "simulinkRunner"
-version = "0.9.0"
+version = "1.0.0"
 authors = [
   { name="Pacria", email="linechecksign@163.com" },
 ]
@@ -20,3 +20,12 @@ classifiers = [
 [project.urls]
 Homepage = "https://github.com/PACRian/SimulinkRunner"
 Issues = "https://github.com/PACRian/SimulinkRunner/issues"
+
+[tools.setuptools]
+include-package-data = true  # 启用非代码文件包含
+
+[tool.setuptools.packages.find]
+where = ["simulinkRunner"]
+
+[tools.setuptools.package-data]
+mypkg = ["*.m"]
