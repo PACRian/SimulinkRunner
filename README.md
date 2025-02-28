@@ -52,4 +52,28 @@ python .\run_batch_test.py
 ```
 
 ## Command line tool
-[TODO]
+A simple script `run_model.py` provides CLI tools for running Simulink models. The syntax is as follows:
+```bash
+python run_model.py [-h] [-p PATH] [-s SIMULATION_ARGS [SIMULATION_ARGS ...]] [-m MODEL_ARGS [MODEL_ARGS ...]] [-a MODEL_ARGS_FILE] [-o OUTPUT] [-c CONFIG] [-l LOG] [-v] [-e] model
+```
+
+### Options
+- `-p`, `--path`: Specify the model path.
+- `-s`: Provide simulation arguments.
+- `-m`: Provide multiple model parameters.
+- `-a`: Specify a file containing model arguments.
+- `-o`: Specify the output path.
+- `-c`: Provide a configuration file.
+- `-l`: Specify a log file.
+- `-v`: Enable verbose mode.
+- `-e`: Enable error logging.
+
+### Example Usage
+To run the `test.slx` model with a discrete step of 0.001:
+```bash
+python run_model.py test -p tests/simulink_model -s FixedStep=.001
+```
+To run it with multiple batches configured by arguments stated after the `-m` flag:
+```bash
+python run_model.py test -p tests/simulink_model -m DUnit/DelayLength=2 oGain/Gain=2 1 dGain/Gain=2 3 4 -s FixedStep=.001 -v
+```
