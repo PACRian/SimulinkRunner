@@ -172,3 +172,15 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+# Simulink autosave files
+slprj/
+*.slxc
+
+
+# H5 data
+*.h5 
+
+# log files
+*.log
+/*.log
