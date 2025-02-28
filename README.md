@@ -46,7 +46,7 @@ runner()
 runner.close()
 ```
 
-A simple demo [`run_batch_test.py`](https://github.com/PACRian/SimulinkRunner/blob/master/run_batch_test.py) along with a simple Simulink model [`test.slx`](https://github.com/PACRian/SimulinkRunner/tree/master/tests/simulink_model)(located in `tests/simulink_model`) can be found, execute the script to run the Simulink model multi-batch.
+Check the simple demo [`run_batch_test.py`](https://github.com/PACRian/SimulinkRunner/blob/master/run_batch_test.py) along with a simple Simulink model [`test.slx`](https://github.com/PACRian/SimulinkRunner/tree/master/tests/simulink_model)(located in `tests/simulink_model`), execute the script to run the Simulink model multi-batch.
 ```bash
 python .\run_batch_test.py
 ```
