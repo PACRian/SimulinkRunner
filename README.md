@@ -2,7 +2,7 @@
 `SimulinkRunner` is an automation tool designed to streamline the process of running and managing Simulink models. This provides a simple API to simulate the model multiple times for further recording and testing, helpful for control system design and analysis.
 
 ## Prerequisite
-To enable this library, the [Matlab engine for Python](https://github.com/mathworks/matlab-engine-for-python) should be manually installed on your PC, according to your MATLAB version.
+To enable this library, the [Matlab engine for Python](https://github.com/mathworks/matlab-engine-for-python) should be manually installed on your PC, according to your MATLAB version, a simple installation tutorial can be found [here](https://github.com/PACRian/SimulinkRunner/blob/master/py_matlab_com.md).
 
 ## Installation
 The package can be installed via `pip`
@@ -23,7 +23,7 @@ import matlab.engine
 from simulinkRunner import Model, Runner, OutputPortProcessor, HDF5Recorder
 
 eng = matlab.engine.start_matlab()
-``` 
+```
 
 Two main classes should be utilized, one is `Model` used to initialize a Simulink model reference object:
 ```python
